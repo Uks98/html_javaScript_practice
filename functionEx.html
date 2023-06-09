@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link,
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        width: 500px;
+        list-style: none;
+        padding: 0px;
+        margin: 0px auto;
+      }
+      li {
+        width: 120px;
+        display: inline-block;
+
+        border: 1px solid gray;
+        padding: 10px 15px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #image1 {
+        display: block;
+        margin: 30px auto;
+        width: 400px;
+        height: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#" onclick="chageImage('bg1')">yellow</a></li>
+      <li><a href="#" onclick="chageImage('bg2')">red</a></li>
+      <li><a href="#" onclick="chageImage('bg3')">purple</a></li>
+    </ul>
+    <div id="container">
+      <img
+        id="image1"
+        src="/Users/sung/Documents/html fle/images/bg0.jpg"
+        alt=""
+      />
+    </div>
+    <script>
+      function chageImage(nums) {
+        document.getElementById("image1").src =
+          "/Users/sung/Documents/html fle/images/" + nums + ".jpg";
+      }
+    </script>
+  </body>
+</html>
