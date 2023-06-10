@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+      }
+      #buttonBox {
+        padding-top: 10px;
+        width: 200px;
+      }
+      .box {
+        background: red;
+      }
+      .boxs {
+        background: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="buttonBox">
+      <button id="red" onclick="changeColor()">red</button>
+      <button id="blue" onclick="changeColor1()">blue</button>
+    </div>
+    <script>
+      function changeColor() {
+        var box = document.getElementById("box");
+        box.setAttribute("class", "box");
+        // box.style.backgroundColor = "red";
+      }
+      function changeColor1() {
+        var box = document.getElementById("box");
+        box.setAttribute("class", "boxs");
+        // box.style.backgroundColor = "blue";
+      }
+    </script>
+  </body>
+</html>
