@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<br lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        margin: 0px auto;
+        width: 500px;
+        border: 1px solid black;
+        background-color: gray;
+      }
+      h2 {
+        text-align: center;
+      }
+      #list{
+        padding-left: 500px;
+    }
+      li{
+        font-size: 20px;
+      }
+      #blue:hover{
+        background-color: skyblue;
+      }
+      #green:hover{
+        background-color: green;
+      }
+    </style>
+  </head>
+  
+    <div id="container">
+      <h2>라면을 끓이는 순서</h2>
+    </div>
+    <hr>
+    <ol id = "list"type="a">
+        <li>물을 끓인다</li>
+        <li><span id = "blue">라면과 스프</span>를 넣는다.</li>
+        <li>파를 썰어 넣는다.</li>
+        <li><span id = "green">5분 후 </span><strong>맛있게</strong> 먹는다.</li>
+    </ol>
+    <script>
+        blueText.addEventListener("mouseoversss",changeToBlue());
+        greenText.addEventListener('mouseovers',changeColorToGreen());
+        //배경색을 그린색으로 변경
+        function changeColorToGreen(){
+            var greenText = document.getElementById("green");
+            greenText.setAttribute('class','hover');
+        }
+        //배경색을 파란색으로 변경
+        function changeToBlue(){
+            var blueText = document.getElementById("blue");
+            blueText.setAttribute("class","hover");
+        }
+    </script>
+  </body>
+</html>
