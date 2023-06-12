@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link,
+      a:visited {
+        color: black;
+        text-decoration: none;
+      }
+      ul {
+        width: 500px;
+        margin: auto;
+        padding: 0;
+        list-style: none;
+      }
+      li {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        border: 1px solid gray;
+        padding: 10px;
+      }
+      #imageBox {
+        padding-top: 20px;
+      }
+      #image {
+        display: block;
+        margin: auto;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <ul>
+        <li><a href="#" onclick="changeImage(this.innerHTML)">Green</a></li>
+        <li><a href="#" onclick="changeImage(this.innerHTML)">Orange</a></li>
+        <li><a href="#" onclick="changeImage(this.innerHTML)">Purple</a></li>
+      </ul>
+      <div id="imageBox">
+        <img id="image" src="/Users/sung/Documents/html fle/images/1.jpg" />
+      </div>
+    </div>
+    <script>
+      function changeImage(name) {
+        var images = document.getElementById("image");
+        if (name == "Green") {
+          images.src = "/Users/sung/Documents/html fle/images/2.jpg";
+        } else if (name == "Orange") {
+          images.src = "/Users/sung/Documents/html fle/images/bg5.jpg";
+        } else {
+          images.src = "/Users/sung/Documents/html fle/images/1.jpg";
+        }
+      }
+    </script>
+  </body>
+</html>
