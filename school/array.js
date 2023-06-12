@@ -27,16 +27,3 @@
 // var colors = color.slice(2); // 지정한 인덱스 요소부터 마지막까지 반환
 // var colora = color.slice(1);
 // console.log(colora);
-
-var now = new Date();
-
-var firstDay = new Date("2023-06-10");
-
-var toNow = now.getTime();
-var tofirst = firstDay.getTime();
-
-var passedTime = toNow - tofirst;
-
-passedTime = Math.round(passedTime / (1000 * 60 * 60 * 24));
-
-console.log(passedTime);
