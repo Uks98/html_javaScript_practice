@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 500px;
+        height: 80px;
+        text-align: center;
+        border: 1px solid black;
+        margin: 0px auto;
+        padding: 0px;
+        background-color: grey;
+        margin-bottom: 30px;
+      }
+      #box {
+        padding-left: 500px;
+        margin: 0px auto;
+      }
+      ol {
+        padding-top: 30px;
+      }
+      #red {
+        background-color: white;
+      }
+      #green {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>라면을 끓이는 순서</h1>
+    </div>
+    <hr />
+    <div id="box">
+      <ol type="A">
+        <li>물을 끓인다.</li>
+        <li><span id="red">라면과 스프를</span> 넣는다.</li>
+        <li>파를 썰어 넣는다.</li>
+        <li><span id="green">5분후 </span> <strong>맛있게</strong> 먹는다.</li>
+      </ol>
+    </div>
+    <script>
+      var red = document.getElementById("red");
+      var green = document.getElementById("green");
+      //id가 레드인 spanTag 변경
+      red.addEventListener("mouseover", overChageRed);
+      red.addEventListener("mouseout", outChageRed);
+      function overChageRed() {
+        red.style.backgroundColor = "red";
+      }
+      function outChageRed() {
+        red.style.backgroundColor = "white";
+      }
+      //id가 그린인 spanTag 변경
+      green.addEventListener("mouseover", overChageGreen);
+      green.addEventListener("mouseout", outChageGreen);
+      function overChageGreen() {
+        green.style.backgroundColor = "green";
+      }
+      function outChageGreen() {
+        green.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

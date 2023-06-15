@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        margin: auto;
+        text-align: center;
+        border: 1px solid black;
+        width: 400px;
+        height: 100px;
+        padding-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>홀수 짝수 판별하기</h1>
+      <p id="explain">25는 홀수입니다.</p>
+    </div>
+    <script>
+      (function () {
+        var nums = prompt("판별을 원하는 숫자는?");
+        var explain = document.getElementById("explain");
+        if (nums % 2 == 0) {
+          explain.innerText = nums + "는 짝수입니다.";
+        } else {
+          explain.innerText = nums + "는 홀수입니다.";
+        }
+      })();
+    </script>
+  </body>
+</html>
